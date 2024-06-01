@@ -1,0 +1,9 @@
+.pizzaitem-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pizzaitem-container table {
+    width: 60%;
+    margin: 0 auto;
+}
