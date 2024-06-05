@@ -3,15 +3,34 @@ import "./AddPizzaForm.css";
 
 function AddPizzaForm() {
   return (
-    <div className="addPizzaform-container">
+    <div className="pizzaForm-container">
       <form>
-        <input type="text" placeholder="Enter Pizza Name" />
-        <select>
+        <input type="text" placeholder="Enter pizza name" />
+        <select id="pizzaSize" name="pizzaSize">
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="large">Large</option>
         </select>
-        <input type="submit" value="submit" />
+        <div className="form-check">
+          <input
+            type="radio"
+            id="vegetarian"
+            name="isVegetarian"
+            value="vegetarian"
+          />
+          &nbsp;
+          <label htmlFor="vegetarian">Vegetarian</label>
+          <br />
+          <input
+            type="radio"
+            id="non-vegetarian"
+            name="isVegetarian"
+            value="non-vegetarian"
+          />
+          &nbsp;
+          <label htmlFor="non-vegetarian">Non Vegetarian</label>
+        </div>
+        <input type="submit" value="Submit" />
       </form>
     </div>
   );

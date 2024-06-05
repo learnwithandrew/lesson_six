@@ -3,7 +3,7 @@ import "./PizzaItem.css";
 
 function PizzaItem({ props }) {
   return (
-    <div className="pizzaitem-container">
+    <div className="pizzaItem-container">
       <table>
         <thead>
           <tr>
@@ -13,7 +13,6 @@ function PizzaItem({ props }) {
             <th>Edit</th>
           </tr>
         </thead>
-
         <tbody>
           {props.map((pizza) => (
             <tr key={pizza.id}>
@@ -21,12 +20,13 @@ function PizzaItem({ props }) {
               <td>{pizza.size}</td>
               <td>{pizza.vegetarian}</td>
               <td>
-                <button>Edit</button>
+                <button className="btn btn-secondary edit-button">Edit</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+      ;
     </div>
   );
 }
